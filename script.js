@@ -13,14 +13,14 @@ function generateQuote() {
     let quoteText = document.getElementById("quote");
     let authorText = document.getElementById("author");
 
-    // Fade out
+    
     quoteText.style.opacity = 0;
 
     setTimeout(() => {
         quoteText.innerText = quotes[randomIndex].text;
         authorText.innerText = "- " + quotes[randomIndex].author;
 
-        // Fade in
+        
         quoteText.style.opacity = 1;
     }, 300);
 
